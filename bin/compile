@@ -98,10 +98,10 @@ mv $BUNDLE_DEST/bundle "$COMPILE_DIR/app"
 rmdir $BUNDLE_DEST
 
 # If we use npm, run npm install.
-if [ -e "$COMPILE_DIR"/app/programs/server/package.json ]; then
-  cd "$COMPILE_DIR"/app/programs/server && npm install
-fi
-
+#if [ -e "$COMPILE_DIR"/app/programs/server/package.json ]; then
+#  cd "$COMPILE_DIR"/app/programs/server && npm install
+#fi
+npm install
 #
 # Environment
 #
