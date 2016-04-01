@@ -74,6 +74,7 @@ METEOR="$METEOR_DIR/.meteor/meteor" # The meteor binary.
 echo "-----> Bundling bundle"
 cd $APP_SOURCE_DIR
 echo "from source dir: $APP_SOURCE_DIR"
+npm install
 
 
 # Now on to bundling. Don't put the bundle in $APP_CHECKOUT_DIR, or it will
@@ -101,7 +102,7 @@ rmdir $BUNDLE_DEST
 #if [ -e "$COMPILE_DIR"/app/programs/server/package.json ]; then
 #  cd "$COMPILE_DIR"/app/programs/server && npm install
 #fi
-npm install
+
 #
 # Environment
 #
